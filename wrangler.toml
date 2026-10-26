@@ -1,0 +1,5 @@
+# Cloudflare Pages configuration (git-connected project "prt-ema").
+# Pages serves only site/ (rendered Agda HTML + paper.pdf); no build step.
+name = "prt-ema"
+pages_build_output_dir = "site"
+compatibility_date = "2026-07-09"

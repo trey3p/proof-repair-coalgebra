@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proof Repair and (Co)algebra Equivalences — Agda Formalization</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 Helvetica, Arial, sans-serif;
+    max-width: 46rem;
+    margin: 3rem auto;
+    padding: 0 1.25rem;
+    color: #1a1a1a;
+    line-height: 1.55;
+  }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; border-bottom: 1px solid #ddd;
+       padding-bottom: 0.3rem; }
+  a { color: #0550ae; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul { padding-left: 1.4rem; }
+  li { margin: 0.25rem 0; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+         font-size: 0.92em; background: #f4f4f4; padding: 0.1em 0.3em;
+         border-radius: 3px; }
+  .note { color: #555; font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<h1>Proof Repair and (Co)algebra Equivalences<br>Agda Formalization</h1>
+
+<p class="note">
+E.G. Plante III, Eric Paul, Cosmo Viola, G.A. Kavvos, and Talia Ringer
+</p>
+
+<p class="note">
+<a href="paper.pdf">Paper (PDF)</a> &middot;
+<a href="https://github.com/trey3p/proof-repair-coalgebra">Source on GitHub</a>
+</p>
+
+<p class="note">
+Supplementary material. This site hosts the machine-checked
+Agda development accompanying the paper; the
+<span style="font-weight:bold">&#10003;</span> markers in the paper link
+directly into the code below. All modules typecheck with
+Agda&nbsp;2.7.0.1 (<code>--cubical --guardedness</code>; the only
+postulate is function extensionality, in
+<a href="agda/common.html#ext"><code>common</code></a>). The index module
+<a href="agda/everything.html"><code>everything</code></a> imports every
+module listed here.
+</p>
+
+<h2>Shared basics</h2>
+<ul>
+  <li><a href="agda/common.html"><code>common</code></a> — shared definitions</li>
+  <li><a href="agda/palg.html"><code>palg</code></a> — polynomial functors, algebras, algebra homomorphisms and equivalences</li>
+</ul>
+
+<h2>Inductive repair</h2>
+<ul>
+  <li><a href="agda/inductive-repair.indspec.html"><code>indspec</code></a> — inductive specifications and constructor algebras</li>
+  <li><a href="agda/inductive-repair.indalg-prop.html"><code>indalg-prop</code></a> — propositional properties of inductive algebras</li>
+  <li><a href="agda/inductive-repair.config.html"><code>config</code></a> — configurations and configuration equivalence</li>
+  <li><a href="agda/inductive-repair.coherence.html"><code>coherence</code></a> — coherence conditions</li>
+  <li><a href="agda/inductive-repair.wtype-config.html"><code>wtype-config</code></a> — W-type configurations</li>
+  <li><a href="agda/inductive-repair.palg-config.html"><code>palg-config</code></a> — algebra configurations</li>
+  <li><a href="agda/inductive-repair.palg-coherence.html"><code>palg-coherence</code></a> — algebra coherence</li>
+  <li><a href="agda/inductive-repair.conversion.html"><code>conversion</code></a> — conversion between configurations and algebras</li>
+  <li><a href="agda/inductive-repair.alg-iso.html"><code>alg-iso</code></a> — algebra isomorphisms</li>
+  <li><a href="agda/inductive-repair.bridge.html"><code>bridge</code></a> — bridging lemmas</li>
+  <li><a href="agda/inductive-repair.config-alg-equiv.html"><code>config-alg-equiv</code></a> — equivalence of configurations and initial algebras</li>
+  <li><a href="agda/inductive-repair.repair-ops.html"><code>repair-ops</code></a> — repair operations</li>
+  <li><a href="agda/inductive-repair.examples.nat.html"><code>examples.nat</code></a> — example: unary and binary naturals</li>
+  <li><a href="agda/inductive-repair.examples.finvec.html"><code>examples.finvec</code></a> — example: finite vectors</li>
+</ul>
+
+<h2>Coinductive repair (Cubical)</h2>
+<ul>
+  <li><a href="agda/coinductive-repair.cubical-common.html"><code>cubical-common</code></a> — cubical prerequisites</li>
+  <li><a href="agda/coinductive-repair.mtype.html"><code>mtype</code></a> — M-types</li>
+  <li><a href="agda/coinductive-repair.coalg.html"><code>coalg</code></a> — coalgebras, finality, bisimulation, coinduction rules</li>
+  <li><a href="agda/coinductive-repair.config.html"><code>config</code></a> — co-configurations and destructor algebras</li>
+  <li><a href="agda/coinductive-repair.coherence.html"><code>coherence</code></a> — co-coherence conditions</li>
+  <li><a href="agda/coinductive-repair.coconfig-coalg-equiv.html"><code>coconfig-coalg-equiv</code></a> — equivalence of co-configurations and final coalgebras</li>
+  <li><a href="agda/coinductive-repair.mtype-config.html"><code>mtype-config</code></a> — M-type configurations</li>
+  <li><a href="agda/coinductive-repair.examples.stream.html"><code>examples.stream</code></a> — example: streams</li>
+</ul>
+</body>
+</html>
